@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>プロジェクト現在地ダッシュボード</title>
+  <style>
+    :root{--bg:#f4f7fb;--card:#fff;--text:#152033;--muted:#6b778c;--line:#dfe6ef;--green:#1f9d67;--yellow:#c89218;--blue:#3b82f6;--shadow:0 10px 28px rgba(16,42,67,.08)}
+    *{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;background:var(--bg);color:var(--text)}
+    .wrap{width:min(1180px,calc(100% - 28px));margin:auto;padding:24px 0 48px}.hero{background:linear-gradient(135deg,#0f2742,#173f67);color:#fff;padding:28px;border-radius:24px;box-shadow:var(--shadow)}
+    .hero h1{margin:0 0 8px;font-size:clamp(26px,5vw,44px);line-height:1.15}.hero p{margin:6px 0 0;color:#d7e3f3;font-size:14px}
+    .summary{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0 24px}.metric,.card,.priority{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow)}
+    .metric .num{font-size:32px;font-weight:800;margin-top:6px}.metric small,.label,footer{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{border-radius:20px;padding:20px}.topline{display:flex;gap:10px;justify-content:space-between;align-items:flex-start}.title{font-size:20px;font-weight:800;line-height:1.35}.status{white-space:nowrap;padding:7px 10px;border-radius:999px;font-size:12px;font-weight:800}.green{background:#e6f7ef;color:#14764d}.yellow{background:#fff5d8;color:#8f6910}.blue{background:#e7f0ff;color:#285ea8}.label{display:block;margin-top:16px;font-size:12px;font-weight:700;letter-spacing:.04em}.value{margin-top:5px;line-height:1.65;font-size:14px}.priority{margin-top:24px;border-radius:20px;padding:22px}.priority h2{margin:0 0 14px}.rank{display:grid;grid-template-columns:44px 1fr;gap:10px;padding:11px 0;border-top:1px solid var(--line)}.rank:first-of-type{border-top:none}.badge{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:#eef4fb;font-weight:800}.note{margin-top:18px;background:#eef5ff;border-left:5px solid var(--blue);padding:16px 18px;border-radius:12px;line-height:1.7}footer{margin-top:22px;font-size:12px;text-align:center}
+    @media(max-width:800px){.summary{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.hero{padding:22px}}@media(max-width:460px){.wrap{width:min(100% - 18px,1180px)}.summary{grid-template-columns:1fr 1fr;gap:10px}.metric{padding:14px}.metric .num{font-size:26px}.card{padding:16px}.title{font-size:18px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero"><h1>🧭 プロジェクト現在地ダッシュボード</h1><p>2026/09/08 09:43 JST｜親プロジェクト単位で集約</p><p>LP・素材・QA・デバッグなどの派生タスクは親案件に統合しています。</p></section>
+    <section class="summary"><div class="metric"><small>主要プロジェクト</small><div class="num">8</div></div><div class="metric"><small>🟢 活発</small><div class="num">3</div></div><div class="metric"><small>🟡 開発・調整</small><div class="num">4</div></div><div class="metric"><small>🔵 基盤運用</small><div class="num">1</div></div></section>
+    <section class="grid">
+      <article class="card"><div class="topline"><div class="title">🙎💬 キャリパス 〜AIキャリアコンパス〜</div><span class="status green">🟢 活発</span></div><span class="label">現在地</span><div class="value">Android MVP、高品質素材統合、販売LPまで進行。</div><span class="label">次の重要ゲート</span><div class="value"><strong>実機P0確認 → 配布URL・料金・規約確定</strong></div></article>
+      <article class="card"><div class="topline"><div class="title">🛡 A.E.G.I.S.</div><span class="status green">🟢 活発</span></div><span class="label">現在地</span><div class="value">世界観、特徴100、HUD、隊員専用アプリ設計、素材まで進行。</div><span class="label">次の重要ゲート</span><div class="value"><strong>実アプリ統合 → 実機QA</strong></div></article>
+      <article class="card"><div class="topline"><div class="title">📊 効果メーター for CHIKUWA!</div><span class="status green">🟢 活発</span></div><span class="label">現在地</span><div class="value">LP公開、ブランドアイコン実装済み。Androidアプリも開発中。</div><span class="label">次の重要ゲート</span><div class="value"><strong>APK実機起動確認 → CHIKUWA!連携具体化</strong></div></article>
+      <article class="card"><div class="topline"><div class="title">🕰 FATE LOG〜運命改変録〜</div><span class="status yellow">🟡 開発中</span></div><span class="label">現在地</span><div class="value">MASTER PROMPT、キャラクター、Android構成、QAを整備。</div><span class="label">次の重要ゲート</span><div class="value"><strong>必須画面実装 → 起動/インストール問題の完全解消</strong></div></article>
+      <article class="card"><div class="topline"><div class="title">🏙 袖ケ浦市 AI CITY</div><span class="status yellow">🟡 実証直前</span></div><span class="label">現在地</span><div class="value">市長説明・限定実証レベルまでかなり完成。</div><span class="label">次の重要ゲート</span><div class="value"><strong>所管課・個人情報・セキュリティ・アクセシビリティ承認</strong></div></article>
+      <article class="card"><div class="topline"><div class="title">🗺 CHIKUWA! DX改善</div><span class="status yellow">🟡 改善設計</span></div><span class="label">現在地</span><div class="value">改善100、用語集、説明会QA、スプレッドシートQAまで構築。</div><span class="label">次の重要ゲート</span><div class="value"><strong>改善項目の優先順位決定 → 実装へ移行</strong></div></article>
+      <article class="card"><div class="topline"><div class="title">🎪 AI曲芸師 基盤</div><span class="status yellow">🟡 複数展開</span></div><span class="label">現在地</span><div class="value">AI曲芸師カメラ、Command Center、画像QA、LINEスタンプなどが並走。</div><span class="label">次の重要ゲート</span><div class="value"><strong>成果物の整理・統合・公開判定</strong></div></article>
+      <article class="card"><div class="topline"><div class="title">🧠 AI意思決定OS / Digital Twin</div><span class="status blue">🔵 基盤運用</span></div><span class="label">現在地</span><div class="value">思考履歴、更新履歴、QA、Digital Twin基盤を継続運用。</div><span class="label">次の重要ゲート</span><div class="value"><strong>Myクローン分析・プロジェクト横断KPIの強化</strong></div></article>
+    </section>
+    <section class="priority"><h2>🔥 優先順位</h2><div class="rank"><div class="badge">1</div><div><strong>キャリパス</strong><br>新機能追加より実機QA・完成判定を優先。</div></div><div class="rank"><div class="badge">2</div><div><strong>効果メーター</strong><br>APKの実機確認とCHIKUWA!連携の具体化。</div></div><div class="rank"><div class="badge">3</div><div><strong>A.E.G.I.S.</strong><br>素材・UIを実アプリに統合し、実機QAへ。</div></div><div class="rank"><div class="badge">4</div><div><strong>FATE LOG</strong><br>起動・インストール系の不具合解消を最優先。</div></div><div class="rank"><div class="badge">5</div><div><strong>袖ケ浦市 AI CITY</strong><br>技術より承認・実証条件の整理へ。</div></div><div class="note"><strong>現在の最大テーマ：</strong><br>「作る」より「完成させる」フェーズへ。特に上位4案件は、<strong>実機QA → 不具合修正 → 完成判定</strong>へ寄せると成果化が速い状態です。</div></section>
+    <footer>Project Dashboard Snapshot / 2026-09-08</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "updated": "2026-09-15",
+  "assets": {
+    "ego_icon": "assets/icons/ego-icon.jpg",
+    "fatelog_icon": "assets/icons/fatelog-icon.jpg"
+  }
+}
